@@ -8,11 +8,9 @@ class Profile(models.Model):
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     age = models.CharField(max_length=2)
-    image = models.ImageField(null=True, blank=True, upload_to="images", default="/images/placeholder.png")
+    image = models.ImageField(null=True, blank=True)
     address = models.CharField(max_length=200)
-    bio = models.TextField()
-    skills = models.TextField()
-    cv = models.ImageField(null=True, blank=True, upload_to="images", default="/images/placeholder.png")
+    cv = models.ImageField(null=True, blank=True)
     github = models.CharField(max_length=200)
     linkedin = models.CharField(max_length=200)
     email = models.EmailField()
@@ -30,8 +28,8 @@ class Tag(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=200)
-    descrition = models.TextField()
-    image = models.ImageField(null=True, blank=True, upload_to="images", default="/images/placeholder.png")
+    description = models.TextField()
+    image = models.ImageField(null=True, blank=True)
     url = models.CharField(max_length=200)
     repository = models.CharField(max_length=200)
 
