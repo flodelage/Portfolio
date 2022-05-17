@@ -1,8 +1,18 @@
 
 #projects-title {
-    padding: 110px 0 32px 0;
-    text-align: center;
+    padding: 110px 120px 12px 120px;
     font-size: 3rem;
+}
+
+#form-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-tags select {
+    padding: 8px 10px;
+    margin-bottom: 12px;
 }
 
 .projects {

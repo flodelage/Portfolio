@@ -9,6 +9,11 @@
 
     <h1 id="projects-title">Mes projets</h1>
 
+    <form id="form-tags" method="GET">
+        {{ project_filter.form }}
+        <input class="btn btn-dark" type="submit" value="Chercher">
+    </form>
+
     <!-- Projects -->
     {% if projects %}
         <div class="projects">
