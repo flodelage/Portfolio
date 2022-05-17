@@ -1,0 +1,26 @@
+
+.navbar {
+    background-color: #040a11 !important;
+    opacity: 0.97;
+    padding: 10px 60px;
+}
+
+nav ul li a, .navbar-brand {
+    font-size: 1rem !important;
+    color: white !important;
+    transition: 0.7s !important;
+}
+
+nav ul li a:hover, .navbar-brand:hover {
+    opacity: 0.5;
+}
+
+.navbar-toggler span i {
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.7s !important;
+}
+
+.navbar-toggler span i:hover {
+    opacity: 0.5;
+}

@@ -1,0 +1,23 @@
+
+{% load static %}
+
+<div class="project-card">
+    <h2>{{ project.title }}</h2>
+    <img class="image" src="{% static project.image.url %}">
+    <div class="project-card-description">
+        <p>{{ project.description }}</p>
+    </div>
+    <div class="project-card-tags">
+        {% for tag in project.tags.all %}
+            <span>#{{tag}}</span>
+        {% endfor %}
+    </div>
+    <div class="project-card-links">
+        {% if project.url %}
+            <a id="project-url" href="{{ project.url }}" target="_blank">Site</a>
+        {% endif %}
+        {% if project.repository %}
+            <a id="repo-url" href="{{ project.repository }}" target="_blank">Code</a>
+        {% endif %}
+    </div>
+</div>

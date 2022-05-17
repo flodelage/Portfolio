@@ -1,0 +1,103 @@
+
+section {
+    padding: 30px 120px;
+}
+
+#profile, #skills, #projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.text-area {
+    width: 70%;
+}
+
+.illustration {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+}
+
+section h2 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #040a11;
+    font-size: 2rem;
+}
+
+section p {
+    color: #040a11;
+    margin: 0;
+}
+
+#profile .illustration img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+#skills .illustration i {
+    color: #040a11;
+    font-size: 2rem;
+    margin: 0 5px;
+}
+
+#projects .illustration a {
+    text-decoration: none;
+    color: white;
+    background-color: #040a11;
+    border-radius: 4px;
+    padding: 16px;
+    opacity: 0.9;
+    transition: 0.7s;
+}
+
+#projects .illustration a:hover {
+    color: #040a11;
+    background-color: white;
+    border: solid 1px #040a11;
+}
+
+#contact {
+    background-color: #040a11;
+    margin-top: 60px;
+}
+
+#contact h2, label {
+    color: white;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#contact form input, textarea {
+    margin-bottom: 12px;
+}
+
+#contact textarea {
+    height: 100px;
+    width: 500px;
+}
+
+#contact form #submit-btn {
+    color: white;
+    border: solid 0.8px white;
+    border-radius: 4px;
+    padding: 16px 48px;
+    transition: 0.7s;
+    background-color: #040a11;
+    margin-top: 12px;
+}
+
+#contact form #submit-btn:hover {
+    color: #040a11;
+    background-color: white;
+}
