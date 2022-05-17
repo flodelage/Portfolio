@@ -30,8 +30,8 @@ class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     image = models.ImageField(null=True, blank=True)
-    url = models.CharField(max_length=200)
-    repository = models.CharField(max_length=200)
+    url = models.CharField(max_length=200, null=True, blank=True)
+    repository = models.CharField(max_length=200, null=True, blank=True)
 
     tags = models.ManyToManyField(Tag, blank=True)
 

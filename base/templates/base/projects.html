@@ -5,18 +5,39 @@
 
 
 {% block content %}
+    <!-- Navbar -->
+    {% include 'base/components/navbar.html' %}
+
+    <h1 id="projects-title">Mes projets</h1>
+
     <!-- Projects -->
-    <div class="projects">
-        {% for project in projects %}
-            <img class="image" src="{% static project.image.url %}">
-            {{ project.title }}
-            {{ project.description }}
-            {% for tag in project.tags.all %}
-                <span class="tag">{{tag}}</span>
+    {% if projects %}
+        <div class="projects">
+            {% for project in projects %}
+                <div class="project-card">
+                    <h2>{{ project.title }}</h2>
+                    <img class="image" src="{% static project.image.url %}">
+                    <div class="project-card-description">
+                        <p>{{ project.description }}</p>
+                    </div>
+                    <div class="project-card-tags">
+                        {% for tag in project.tags.all %}
+                            <span>#{{tag}}</span>
+                        {% endfor %}
+                    </div>
+                    <div class="project-card-links">
+                        {% if project.url %}
+                            <a id="project-url" href="{{ project.url }}" target="_blank">Site</a>
+                        {% endif %}
+                        {% if project.repository %}
+                            <a id="repo-url" href="{{ project.repository }}" target="_blank">Code</a>
+                        {% endif %}
+                    </div>
+                </div>
             {% endfor %}
-            <a href="{{ project.url }}" target="_blank">Project</a>
-            <a href="{{ project.repository }}" target="_blank">Repository</a>
-        {% endfor %}
-    </div>
+        </div>
+    {% else %}
+        <p>Désolé mais il n'y a pas de projet</p>
+    {% endif %}
 
 {% endblock content %}

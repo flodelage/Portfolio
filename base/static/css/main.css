@@ -5,6 +5,10 @@
     font-size: 16px;
 }
 
+h1, h2 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -122,29 +126,30 @@ section p {
 }
 
 #profile .illustration img {
-    height: 200px;
+    height: 150px;
     border-radius: 50%;
 }
 
 #skills .illustration i {
     color: #040a11;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0 5px;
 }
 
 #projects .illustration a {
     text-decoration: none;
-    color: #040a11;
-    border: solid 1px #040a11;
+    color: white;
+    background-color: #040a11;
     border-radius: 4px;
     padding: 16px;
+    opacity: 0.9;
     transition: 0.7s;
 }
 
 #projects .illustration a:hover {
-    color: white;
-    background-color: #040a11;
-    opacity: 0.9;
+    color: #040a11;
+    background-color: white;
+    border: solid 1px #040a11;
 }
 
 #contact {
@@ -186,4 +191,71 @@ section p {
 #contact form #submit-btn:hover {
     color: #040a11;
     background-color: white;
+}
+
+/* PROJECTS */
+#projects-title {
+    padding: 110px 0 32px 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.projects {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    width: 100%;
+    padding: 30px 120px;
+}
+
+/* CARD */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 24px 24px 40px 24px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.project-card img {
+    height: 210px;
+    width: 360px;
+    margin: 12px 0 16px 0;
+    border: solid 0.1px #040a11;
+    border-radius: 4px;
+}
+
+.project-card-tags span {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #696969;
+}
+
+.project-card-links {
+    padding-top: 32px;
+}
+
+.project-card-links a {
+    text-decoration: none;
+    background-color: #040a11;
+    border-radius: 4px;
+    color: white;
+    padding: 16px;
+    margin: 8px;
+    opacity: 0.9;
+    transition: 0.7s;
+}
+
+.project-card-links #project-url {
+    padding: 16px 21px;
+}
+
+.project-card-links a:hover {
+    color: #040a11;
+    background-color: white;
+    border: solid 1px #040a11;
+    opacity: 0.9;
 }

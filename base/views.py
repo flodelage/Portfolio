@@ -16,7 +16,7 @@ def home(request):
 
 
 def projects(request):
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('title')
     return render(
         request,
         'base/projects.html',
