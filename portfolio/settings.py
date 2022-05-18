@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv('DJANGO_KEY')
 DEBUG = False if os.environ.get('ENV', 'development') == 'production' else True
 
 
-ALLOWED_HOSTS = ['.herokuapps.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['florian-delage-portfolio.herokuapp.com', '.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
