@@ -30,7 +30,7 @@ load_dotenv(dotenv_path=BASE_DIR / '.env')
 SECRET_KEY = os.getenv('DJANGO_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = False if os.environ.get('ENV', 'development') == 'production' else True
 
 
 ALLOWED_HOSTS = ['.herokuapps.com', 'localhost', '127.0.0.1']
