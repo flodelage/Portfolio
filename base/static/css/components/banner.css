@@ -1,29 +1,39 @@
 
 .banner {
+    background-image: url('https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
-    padding: 160px 0;
+    height: 90vh;
+    padding: 210px 0;
     margin-bottom: 30px;
 }
 
-.banner-content h1 {
-    font-family: 'Archivo Black', sans-serif;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 6rem;
+.banner .banner-content h1 {
+    color: #121212;
+    font-size: 8rem;
+    text-align: center;
     padding: 0 60px;
-    margin: 0 0 60px 0;
-    opacity: 0.95;
+    margin: 0 0 150px 0;
+}
+
+.banner .banner-content h2 {
+    color: #DA0037;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+.banner .banner-content h2 span {
+    color: #121212;
+    font-size: 3rem;
+    margin: 0;
 }
 
 .banner-content p {
-    font-family: "Open Sans",sans-serif;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    color: #121212;
     font-size: 1.2rem;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 .banner .banner-content .subtitle {
@@ -36,7 +46,7 @@
 }
 
 .banner .banner-content .subtitle #social-media i {
-    color: white;
+    color: #121212;
     opacity: 0.95;
     font-size: 1.5rem;
     margin: 0 5px;

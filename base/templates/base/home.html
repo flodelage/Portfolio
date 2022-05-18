@@ -14,6 +14,9 @@
 
     <!-- Profile -->
     <section id="profile">
+        <div class="illustration">
+            <img src="{% static profile.image.url %}" alt="portrait">
+        </div>
         <div class="text-area">
             <h2>Bio</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
@@ -21,9 +24,6 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt sapiente veniam quam quaerat cupiditate adipisci et commodi unde. Nam molestiae non deleniti laboriosam reiciendis dolor doloribus aperiam eveniet culpa?
             Je m'appelle {{ profile.first_name }} {{ profile.last_name }}, je vis à {{ profile.address }}
             </p>
-        </div>
-        <div class="illustration">
-            <img src="{% static profile.image.url %}" alt="portrait">
         </div>
     </section>
 
@@ -43,11 +43,15 @@
             <i class="fa-brands fa-html5"></i>
             <i class="fa-brands fa-css3-alt"></i>
             <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-git-alt"></i>
         </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
+        <div class="illustration">
+            <a href="{% url 'projects' %}">Voir mes projets</a>
+        </div>
         <div class="text-area">
             <h2>Projets</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
@@ -55,9 +59,6 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt sapiente veniam quam quaerat cupiditate adipisci et commodi unde. Nam molestiae non deleniti laboriosam reiciendis dolor doloribus aperiam eveniet culpa?
             Je m'appelle {{ profile.first_name }} {{ profile.last_name }}, je vis à {{ profile.address }}
             </p>
-        </div>
-        <div class="illustration">
-            <a href="{% url 'projects' %}">Voir mes projets</a>
         </div>
     </section>
 

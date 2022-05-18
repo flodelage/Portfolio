@@ -1,8 +1,9 @@
 
 .navbar {
-    background-color: #040a11 !important;
-    opacity: 0.97;
+    background-color: #121212 !important;
     padding: 10px 60px;
+    height: 10vh;
+    opacity: 0.98;
 }
 
 nav ul li a, .navbar-brand {

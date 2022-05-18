@@ -13,7 +13,7 @@
     height: 210px;
     width: 360px;
     margin: 12px 0 16px 0;
-    border: solid 0.1px #040a11;
+    border: solid 0.1px #121212;
     border-radius: 4px;
 }
 
@@ -29,22 +29,20 @@
 
 .project-card-links a {
     text-decoration: none;
-    background-color: #040a11;
+    background-color: rgb(218, 0, 55, 0.9);
+    border: solid 1px rgb(218, 0, 55, 0.9);
     border-radius: 4px;
     color: white;
     padding: 16px;
     margin: 8px;
-    opacity: 0.9;
     transition: 0.7s;
+}
+
+.project-card-links a:hover {
+    color: rgb(218, 0, 55, 0.9);
+    background-color: white;
 }
 
 .project-card-links #project-url {
     padding: 16px 21px;
-}
-
-.project-card-links a:hover {
-    color: #040a11;
-    background-color: white;
-    border: solid 1px #040a11;
-    opacity: 0.9;
 }

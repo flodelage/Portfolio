@@ -24,45 +24,46 @@ section {
 }
 
 section h2 {
-    font-family: 'Archivo Black', sans-serif;
-    color: #040a11;
+    color: #DA0037;
     font-size: 2rem;
 }
 
 section p {
-    color: #040a11;
+    color: #121212;
     margin: 0;
 }
 
 #profile .illustration img {
     height: 150px;
     border-radius: 50%;
+    border: solid 0.1px rgb(218, 0, 55, 0.3);
 }
 
 #skills .illustration i {
-    color: #040a11;
+    color: #DA0037;
     font-size: 2rem;
     margin: 0 5px;
+    opacity: 0.9;
 }
 
 #projects .illustration a {
     text-decoration: none;
     color: white;
-    background-color: #040a11;
+    background-color: rgb(218, 0, 55, 0.9);
+    border: solid 1px rgb(218, 0, 55, 0.9);
     border-radius: 4px;
     padding: 16px;
-    opacity: 0.9;
     transition: 0.7s;
 }
 
 #projects .illustration a:hover {
-    color: #040a11;
+    color: rgb(218, 0, 55, 0.9);
+    border: solid 1px rgb(218, 0, 55, 0.9);
     background-color: white;
-    border: solid 1px #040a11;
 }
 
 #contact {
-    background-color: #040a11;
+    background-color: #121212;
     margin-top: 60px;
 }
 
@@ -89,15 +90,15 @@ section p {
 
 #contact form #submit-btn {
     color: white;
-    border: solid 0.8px white;
+    border: solid 1px rgb(218, 0, 55, 0.9);
     border-radius: 4px;
     padding: 16px 48px;
     transition: 0.7s;
-    background-color: #040a11;
+    background-color: rgb(218, 0, 55, 0.9);
     margin-top: 12px;
 }
 
 #contact form #submit-btn:hover {
-    color: #040a11;
+    color: #DA0037;
     background-color: white;
 }
