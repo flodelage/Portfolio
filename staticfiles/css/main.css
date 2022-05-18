@@ -1,0 +1,12 @@
+
+@import 'default.css';
+
+/* Components */
+@import 'components/navbar.css';
+@import 'components/banner.css';
+@import 'components/card-project.css';
+
+/* Pages */
+@import 'home.css';
+@import 'projects.css';
+@import 'email_sent.css';

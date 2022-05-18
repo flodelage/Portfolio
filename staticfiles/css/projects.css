@@ -1,0 +1,38 @@
+
+#projects-title {
+    padding: 50px 120px 12px 120px;
+    font-size: 3rem;
+    color: #121212;
+    margin: 0;
+}
+
+#form-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-tags select {
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    color: #121212;
+}
+
+#form-tags input {
+    background-color: rgb(218, 0, 55, 0.9) !important;
+    border: solid 1px rgb(218, 0, 55, 0.9) !important;
+    transition: 0.7s !important;
+}
+
+#form-tags input:hover {
+    opacity: 0.6;
+}
+
+.projects {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    width: 100%;
+    padding: 30px 120px;
+}

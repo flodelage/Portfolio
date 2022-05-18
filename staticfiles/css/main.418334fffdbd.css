@@ -1,0 +1,12 @@
+
+@import url("default.9795b4bf4ea6.css");
+
+/* Components */
+@import url("components/navbar.9ad6768a1bdf.css");
+@import url("components/banner.9b251356e53a.css");
+@import url("components/card-project.abccb593eb3c.css");
+
+/* Pages */
+@import url("home.f6b7a25cb2bc.css");
+@import url("projects.70962e1bd81a.css");
+@import url("email_sent.53812b26cd0e.css");
