@@ -57,9 +57,7 @@ section p {
 }
 
 #projects .illustration a:hover {
-    color: rgb(218, 0, 55, 0.9);
-    border: solid 1px rgb(218, 0, 55, 0.9);
-    background-color: white;
+    opacity: 0.6;
 }
 
 #contact {
@@ -99,6 +97,5 @@ section p {
 }
 
 #contact form #submit-btn:hover {
-    color: #DA0037;
-    background-color: white;
+    opacity: 0.6;
 }

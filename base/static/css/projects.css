@@ -1,6 +1,6 @@
 
 #projects-title {
-    padding: 110px 120px 12px 120px;
+    padding: 50px 120px 12px 120px;
     font-size: 3rem;
     color: #121212;
     margin: 0;
@@ -25,8 +25,7 @@
 }
 
 #form-tags input:hover {
-    background-color: white !important;
-    color: rgb(218, 0, 55, 0.9) !important;
+    opacity: 0.6;
 }
 
 .projects {

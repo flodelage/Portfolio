@@ -1,0 +1,17 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+
+    <!-- Navbar -->
+    {% include 'base/components/navbar.html' %}
+
+    <div id="page-wrapper">
+        <div id="success-box">
+            <h1>Merci de m'avoir contacté !</h1>
+            <p>Votre message a bien été envoyé.</p>
+            <p>Je fais de mon mieux pour vous répondre au plus vite <i class="fa-solid fa-face-smile"></i></p>
+            <a id="back-btn" class="btn btn-success" href="{% url 'home' %}">Page d'accueil</a>
+        </div>
+    </div>
+
+{% endblock content %}

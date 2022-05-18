@@ -1,0 +1,9 @@
+{% autoescape off %}
+
+de: {{name}}
+
+email: {{email}}
+
+{{message}}
+
+{% endautoescape %}
