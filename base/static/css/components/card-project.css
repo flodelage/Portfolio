@@ -13,14 +13,14 @@
     height: 210px;
     width: 360px;
     margin: 12px 0 16px 0;
-    border: solid 0.1px #121212;
+    border: solid 0.1px var(--primary-color);
     border-radius: 4px;
 }
 
 .project-card-tags span {
     font-size: 0.8rem;
     font-style: italic;
-    color: #696969;
+    color: var(--third-color);
 }
 
 .project-card-links {
@@ -29,8 +29,8 @@
 
 .project-card-links a {
     text-decoration: none;
-    background-color: rgb(218, 0, 55, 0.9);
-    border: solid 1px rgb(218, 0, 55, 0.9);
+    background-color: var(--secondary-color-bg);
+    border: solid 1px var(--secondary-color-bg);
     border-radius: 4px;
     color: white;
     padding: 16px;

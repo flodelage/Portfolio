@@ -24,12 +24,12 @@ section {
 }
 
 section h2 {
-    color: #DA0037;
+    color: var(--secondary-color);
     font-size: 2rem;
 }
 
 section p {
-    color: #121212;
+    color: var(--primary-color);
     margin: 0;
 }
 
@@ -40,7 +40,7 @@ section p {
 }
 
 #skills .illustration i {
-    color: #DA0037;
+    color: var(--secondary-color);
     font-size: 2rem;
     margin: 0 5px;
     opacity: 0.9;
@@ -49,7 +49,7 @@ section p {
 #projects .illustration a {
     text-decoration: none;
     color: white;
-    background-color: rgb(218, 0, 55, 0.9);
+    background-color: var(--secondary-color-bg);
     border: solid 1px rgb(218, 0, 55, 0.9);
     border-radius: 4px;
     padding: 16px;
@@ -61,7 +61,7 @@ section p {
 }
 
 #contact {
-    background-color: #121212;
+    background-color: var(--primary-color);
     margin-top: 60px;
 }
 
@@ -88,11 +88,11 @@ section p {
 
 #contact form #submit-btn {
     color: white;
-    border: solid 1px rgb(218, 0, 55, 0.9);
+    border: solid 1px var(--secondary-color-bg);
     border-radius: 4px;
     padding: 16px 48px;
     transition: 0.7s;
-    background-color: rgb(218, 0, 55, 0.9);
+    background-color: var(--secondary-color-bg);
     margin-top: 12px;
 }
 

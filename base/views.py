@@ -12,7 +12,7 @@ def home(request):
     profile = Profile.objects.all()[0]
 
     context = {'profile': profile,}
-    return render(request, 'base/home.html', context)
+    return render(request, 'base/pages/home.html', context)
 
 
 def projects(request):
@@ -21,7 +21,7 @@ def projects(request):
     projects = project_filter.qs
 
     context = {'projects': projects, 'project_filter': project_filter}
-    return render(request, 'base/projects.html', context)
+    return render(request, 'base/pages/projects.html', context)
 
 
 def send_email(request):
@@ -43,4 +43,4 @@ def send_email(request):
 		email.fail_silently=False
 		email.send()
 
-	return render(request, 'base/email_sent.html')
+	return render(request, 'base/pages/email_sent.html')

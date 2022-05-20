@@ -10,7 +10,7 @@
 }
 
 .banner .banner-content h1 {
-    color: #121212;
+    color: var(--primary-color);
     font-size: 8rem;
     text-align: center;
     padding: 0 60px;
@@ -18,20 +18,20 @@
 }
 
 .banner .banner-content h2 {
-    color: #DA0037;
+    color: var(--secondary-color);
     font-size: 3rem;
     text-align: center;
     margin: 0;
 }
 
 .banner .banner-content h2 span {
-    color: #121212;
+    color: var(--primary-color);
     font-size: 3rem;
     margin: 0;
 }
 
 .banner-content p {
-    color: #121212;
+    color: var(--primary-color);
     font-size: 1.2rem;
     opacity: 0.9;
 }
@@ -46,7 +46,7 @@
 }
 
 .banner .banner-content .subtitle #social-media i {
-    color: #121212;
+    color: var(--primary-color);
     opacity: 0.95;
     font-size: 1.5rem;
     margin: 0 5px;

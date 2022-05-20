@@ -2,7 +2,7 @@
 #projects-title {
     padding: 50px 120px 12px 120px;
     font-size: 3rem;
-    color: #121212;
+    color: var(--primary-color);
     margin: 0;
 }
 
@@ -15,12 +15,12 @@
 #form-tags select {
     padding: 8px 10px;
     margin-bottom: 12px;
-    color: #121212;
+    color: var(--primary-color);
 }
 
 #form-tags input {
-    background-color: rgb(218, 0, 55, 0.9) !important;
-    border: solid 1px rgb(218, 0, 55, 0.9) !important;
+    background-color: var(--secondary-color-bg) !important;
+    border: solid 1px var(--secondary-color-bg) !important;
     transition: 0.7s !important;
 }
 

@@ -9,7 +9,7 @@
 #success-box {
     max-width: 800px;
     height: auto;
-    border: 1px solid #696969;
+    border: 1px solid var(--third-color);
     border-radius: 4px;
     padding: 16px;
 }
@@ -20,8 +20,8 @@
 }
 
 #back-btn {
-    background-color: rgb(218, 0, 55, 0.9);
-    border: solid 1px rgb(218, 0, 55, 0.9);
+    background-color: var(--secondary-color-bg);
+    border: solid 1px var(--secondary-color-bg);
     transition: 0.7s;
 }
 
