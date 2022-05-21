@@ -17,7 +17,7 @@
         <div class="illustration">
             <img src="{% static profile.image.url %}" alt="portrait">
         </div>
-        <div class="text-area">
+        <div class="text">
             <h2>Bio</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque numquam assumenda error id dolorem suscipit eligendi, culpa consectetur laudantium deserunt eos itaque, accusamus, saepe cumque magni ipsum labore molestiae sequi!
@@ -29,7 +29,7 @@
 
     <!-- Skills -->
     <section id="skills">
-        <div class="text-area">
+        <div class="text">
             <h2>Compétences</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque numquam assumenda error id dolorem suscipit eligendi, culpa consectetur laudantium deserunt eos itaque, accusamus, saepe cumque magni ipsum labore molestiae sequi!
@@ -52,7 +52,7 @@
         <div class="illustration">
             <a href="{% url 'projects' %}">Voir mes projets</a>
         </div>
-        <div class="text-area">
+        <div class="text">
             <h2>Projets</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque numquam assumenda error id dolorem suscipit eligendi, culpa consectetur laudantium deserunt eos itaque, accusamus, saepe cumque magni ipsum labore molestiae sequi!
@@ -65,7 +65,7 @@
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <form id="contact-form" method="POST" action="{% url 'send_email' %}">
+        <form class="contact__form" method="POST" action="{% url 'send_email' %}">
             {% csrf_token %}
 
             <label>Nom</label>
@@ -80,7 +80,7 @@
             <label>Message</label>
             <textarea required class="input-field" name="message"></textarea>
 
-            <input id="submit-btn" type="submit" value="Envoyer">
+            <input id="contact__submit-btn" type="submit" value="Envoyer">
         </form>
     </section>
 

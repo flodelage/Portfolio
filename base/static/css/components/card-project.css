@@ -17,17 +17,17 @@
     border-radius: 4px;
 }
 
-.project-card-tags span {
+.project-card__tags span {
     font-size: 0.8rem;
     font-style: italic;
     color: var(--third-color);
 }
 
-.project-card-links {
+.project-card__links {
     padding-top: 32px;
 }
 
-.project-card-links a {
+.project-card__links a {
     text-decoration: none;
     background-color: var(--secondary-color-bg);
     border: solid 1px var(--secondary-color-bg);
@@ -38,10 +38,10 @@
     transition: 0.7s;
 }
 
-.project-card-links a:hover {
+.project-card__links a:hover {
     opacity: 0.6;
 }
 
-.project-card-links #project-url {
+.project-card__links #project-url {
     padding: 16px 21px;
 }

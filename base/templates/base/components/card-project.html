@@ -4,15 +4,15 @@
 <div class="project-card">
     <h2>{{ project.title }}</h2>
 
-    <div class="project-card-description">
+    <div class="project-card__description">
         <p>{{ project.description }}</p>
     </div>
-    <div class="project-card-tags">
+    <div class="project-card__tags">
         {% for tag in project.tags.all %}
             <span>#{{tag}}</span>
         {% endfor %}
     </div>
-    <div class="project-card-links">
+    <div class="project-card__links">
             <a id="project-url" href="{{ project.url }}" target="_blank">Site</a>
             <a id="repo-url" href="{{ project.repository }}" target="_blank">Code</a>
     </div>

@@ -11,7 +11,7 @@ section {
     align-items: center;
 }
 
-.text-area {
+.text {
     width: 70%;
 }
 
@@ -69,7 +69,7 @@ section p {
     color: white;
 }
 
-#contact form {
+.contact__form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +77,8 @@ section p {
     justify-content: center;
 }
 
-#contact form input, textarea {
+.contact__form input, textarea {
+    padding: 0 6px;
     margin-bottom: 12px;
 }
 
@@ -86,7 +87,7 @@ section p {
     width: 500px;
 }
 
-#contact form #submit-btn {
+#contact__submit-btn {
     color: white;
     border: solid 1px var(--secondary-color-bg);
     border-radius: 4px;
@@ -96,6 +97,6 @@ section p {
     margin-top: 12px;
 }
 
-#contact form #submit-btn:hover {
+#contact__submit-btn:hover {
     opacity: 0.6;
 }

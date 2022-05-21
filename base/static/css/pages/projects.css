@@ -1,6 +1,6 @@
 
 #projects-title {
-    padding: 50px 120px 12px 120px;
+    padding: 100px 120px 0 120px;
     font-size: 3rem;
     color: var(--primary-color);
     margin: 0;
@@ -16,6 +16,10 @@
     padding: 8px 10px;
     margin-bottom: 12px;
     color: var(--primary-color);
+}
+
+#form-tags p {
+    font-size: 0.7rem;
 }
 
 #form-tags input {
