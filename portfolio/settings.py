@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
     'django_filters',
     'storages',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -147,6 +148,7 @@ MEDIA_URL = '/images/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'base/static/images')
+
 
 #gmail_send/settings.py
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

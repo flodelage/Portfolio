@@ -2,6 +2,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+from ckeditor.fields import RichTextField
+
 
 class Profile(models.Model):
     user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
@@ -10,6 +12,9 @@ class Profile(models.Model):
     age = models.CharField(max_length=2)
     image = models.ImageField(null=True, blank=True)
     address = models.CharField(max_length=200)
+    bio = RichTextField(null=True, blank=True)
+    skills = RichTextField(null=True, blank=True)
+    work = RichTextField(null=True, blank=True)
     cv = models.ImageField(null=True, blank=True)
     github = models.CharField(max_length=200)
     linkedin = models.CharField(max_length=200)

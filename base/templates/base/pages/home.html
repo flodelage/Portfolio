@@ -14,16 +14,12 @@
 
     <!-- Profile -->
     <section id="profile">
-        <div class="illustration">
-            <img src="{% static profile.image.url %}" alt="portrait">
-        </div>
         <div class="text">
             <h2>Bio</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque numquam assumenda error id dolorem suscipit eligendi, culpa consectetur laudantium deserunt eos itaque, accusamus, saepe cumque magni ipsum labore molestiae sequi!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt sapiente veniam quam quaerat cupiditate adipisci et commodi unde. Nam molestiae non deleniti laboriosam reiciendis dolor doloribus aperiam eveniet culpa?
-            Je m'appelle {{ profile.first_name }} {{ profile.last_name }}, je vis à {{ profile.address }}
-            </p>
+            <p>{{ profile.bio | safe }}</p>
+        </div>
+        <div class="illustration">
+            <img src="{% static '/images/photo_cv_détourée.png' %}" alt="portrait">
         </div>
     </section>
 
@@ -31,11 +27,7 @@
     <section id="skills">
         <div class="text">
             <h2>Compétences</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque numquam assumenda error id dolorem suscipit eligendi, culpa consectetur laudantium deserunt eos itaque, accusamus, saepe cumque magni ipsum labore molestiae sequi!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt sapiente veniam quam quaerat cupiditate adipisci et commodi unde. Nam molestiae non deleniti laboriosam reiciendis dolor doloribus aperiam eveniet culpa?
-            Je m'appelle {{ profile.first_name }} {{ profile.last_name }}, je vis à {{ profile.address }}
-            </p>
+            <p>{{ profile.skills | safe }}</p>
         </div>
         <div class="illustration">
             <i class="fa-brands fa-python"></i>
@@ -49,16 +41,12 @@
 
     <!-- Projects -->
     <section id="projects">
-        <div class="illustration">
-            <a href="{% url 'projects' %}">Voir mes projets</a>
-        </div>
         <div class="text">
             <h2>Projets</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem consequuntur modi odit quidem rerum molestias nam, temporibus quia, quis obcaecati doloremque harum non facere qui nihil nesciunt dolores? Optio, possimus.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque numquam assumenda error id dolorem suscipit eligendi, culpa consectetur laudantium deserunt eos itaque, accusamus, saepe cumque magni ipsum labore molestiae sequi!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt sapiente veniam quam quaerat cupiditate adipisci et commodi unde. Nam molestiae non deleniti laboriosam reiciendis dolor doloribus aperiam eveniet culpa?
-            Je m'appelle {{ profile.first_name }} {{ profile.last_name }}, je vis à {{ profile.address }}
-            </p>
+            <p>{{ profile.work | safe }}</p>
+        </div>
+        <div class="illustration">
+            <a href="{% url 'projects' %}">Voir mes projets</a>
         </div>
     </section>
 
