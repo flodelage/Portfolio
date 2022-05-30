@@ -1,0 +1,102 @@
+
+section {
+    padding: 30px 120px;
+}
+
+#profile, #skills, #projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 70%;
+}
+
+.illustration {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+}
+
+section h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+section p {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+#profile .illustration img {
+    height: 150px;
+    border-radius: 50%;
+    border: solid 0.1px rgb(218, 0, 55, 0.3);
+}
+
+#skills .illustration i {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin: 0 5px;
+    opacity: 0.9;
+}
+
+#projects .illustration a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-color-bg);
+    border: solid 1px rgb(218, 0, 55, 0.9);
+    border-radius: 4px;
+    padding: 16px;
+    transition: 0.7s;
+}
+
+#projects .illustration a:hover {
+    opacity: 0.6;
+}
+
+#contact {
+    background-color: var(--primary-color);
+    margin-top: 60px;
+}
+
+#contact h2, label {
+    color: white;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact__form input, textarea {
+    padding: 0 6px;
+    margin-bottom: 12px;
+}
+
+#contact textarea {
+    height: 100px;
+    width: 500px;
+}
+
+#contact__submit-btn {
+    color: white;
+    border: solid 1px var(--secondary-color-bg);
+    border-radius: 4px;
+    padding: 16px 48px;
+    transition: 0.7s;
+    background-color: var(--secondary-color-bg);
+    margin-top: 12px;
+}
+
+#contact__submit-btn:hover {
+    opacity: 0.6;
+}
