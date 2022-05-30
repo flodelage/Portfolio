@@ -1,0 +1,42 @@
+
+#projects-title {
+    padding: 100px 120px 0 120px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+#form-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-tags select {
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+}
+
+#form-tags p {
+    font-size: 0.7rem;
+}
+
+#form-tags input {
+    background-color: var(--secondary-color-bg) !important;
+    border: solid 1px var(--secondary-color-bg) !important;
+    transition: 0.7s !important;
+}
+
+#form-tags input:hover {
+    opacity: 0.6;
+}
+
+.projects {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    width: 100%;
+    padding: 30px 120px;
+}

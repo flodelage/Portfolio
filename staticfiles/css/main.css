@@ -1,0 +1,13 @@
+
+@import 'default.css';
+@import 'variables.css';
+
+/* Components */
+@import 'components/navbar.css';
+@import 'components/banner.css';
+@import 'components/card-project.css';
+
+/* Pages */
+@import 'pages/home.css';
+@import 'pages/projects.css';
+@import 'pages/email_sent.css';
