@@ -1,6 +1,6 @@
 
 .banner {
-
+    background-image: url('../../images/banner-bg.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;

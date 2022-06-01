@@ -1,39 +1,86 @@
 
 .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
     background-image: url('../../images/banner-bg.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
-    padding: 260px 0;
     margin-bottom: 30px;
+    padding: 220px 60px 24px 60px;
+}
+@media only screen and (max-device-width: 560px) {
+    .banner {
+        padding: 220px 24px 24px 24px;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    .banner {
+        height: 60vh;
+        padding: 132px 24px 24px 24px;
+    }
 }
 
-.banner__content h1 {
+.banner__title h1 {
     color: var(--primary-color);
     font-size: 8rem;
     text-align: center;
-    padding: 0 60px;
-    margin: 0 0 160px 0;
+}
+@media only screen and (max-device-width: 630px) {
+    .banner__title h1 {
+        font-size: 7rem;
+    }
+}
+@media only screen and (max-device-width: 560px) {
+    .banner__title h1 {
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    .banner__title h1 {
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-device-width: 375px) {
+    .banner__title h1 {
+        font-size: 4rem;
+    }
 }
 
-.banner__content h2 {
+.banner__title h2 {
     color: var(--secondary-color);
     font-size: 3rem;
     text-align: center;
     margin: 0;
 }
+@media only screen and (max-device-width: 630px) {
+    .banner__title h2 {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-device-width: 560px) {
+    .banner__title h2 {
+        font-size: 1.5rem;
+    }
+}
 
-.banner__content h2 span {
+.banner__title h2 span {
     color: var(--primary-color);
     font-size: 3rem;
     margin: 0;
 }
-
-.banner__content p {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    opacity: 0.9;
+@media only screen and (max-device-width: 630px) {
+    .banner__title h2 span {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-device-width: 560px) {
+    .banner__title h2 span {
+        font-size: 1.5rem;
+    }
 }
 
 .banner__subtitle {
@@ -42,7 +89,33 @@
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+}
+@media only screen and (max-device-width: 375px) {
+    .banner__subtitle {
+        flex-direction: column;
+    }
+}
+
+.banner__subtitle p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 0;
+}
+@media only screen and (max-device-width: 630px) {
+    .banner__subtitle p {
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-device-width: 560px) {
+    .banner__subtitle p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    .banner__subtitle p {
+        font-size: 0.9rem;
+    }
 }
 
 .banner__social-media i {
@@ -51,6 +124,26 @@
     font-size: 1.5rem;
     margin: 0 5px;
     transition: 0.7s;
+}
+@media only screen and (max-device-width: 630px) {
+    .banner__social-media i {
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-device-width: 560px) {
+    .banner__social-media i {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    .banner__social-media i {
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-device-width: 375px) {
+    .banner__social-media i {
+        margin: 0 2px;
+    }
 }
 
 .banner__social-media i:hover {
