@@ -20,7 +20,7 @@
 @media only screen and (max-device-width: 425px) {
     .banner {
         height: 60vh;
-        padding: 132px 24px 24px 24px;
+        padding: 120px 24px 24px 24px;
     }
 }
 
@@ -133,16 +133,6 @@
 @media only screen and (max-device-width: 560px) {
     .banner__social-media i {
         font-size: 1.2rem;
-    }
-}
-@media only screen and (max-device-width: 425px) {
-    .banner__social-media i {
-        font-size: 1.1rem;
-    }
-}
-@media only screen and (max-device-width: 375px) {
-    .banner__social-media i {
-        margin: 0 2px;
     }
 }
 
