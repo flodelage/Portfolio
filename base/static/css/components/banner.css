@@ -90,7 +90,7 @@
     justify-content: space-between;
     align-items: center;
 }
-@media only screen and (max-device-width: 375px) {
+@media only screen and (max-device-width: 425px) {
     .banner__subtitle {
         flex-direction: column;
     }
@@ -133,6 +133,11 @@
 @media only screen and (max-device-width: 560px) {
     .banner__social-media i {
         font-size: 1.2rem;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    .banner__social-media i {
+        margin-top: 4px;
     }
 }
 
