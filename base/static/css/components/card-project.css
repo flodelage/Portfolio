@@ -3,24 +3,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
+    width: 90%;
     padding: 24px 24px 40px 24px;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+@media only screen and (max-device-width: 900px) {
+    .project-card {
+        width: 70%;
+    }
+}
+@media only screen and (max-device-width: 830px) {
+    .project-card {
+        width: 80%;
+    }
+}
+@media only screen and (max-device-width: 750px) {
+    .project-card {
+        width: 90%;
+    }
+}
 
 .project-card img {
-    height: 210px;
-    width: 360px;
+    height: 100%;
+    width: 100%;
     margin: 12px 0 16px 0;
     border: solid 0.1px var(--primary-color);
     border-radius: 4px;
+}
+
+@media only screen and (max-device-width: 560px) {
+    .project-card p {
+        font-size: 0.8rem;
+    }
 }
 
 .project-card__tags span {
     font-size: 0.8rem;
     font-style: italic;
     color: var(--third-color);
+}
+@media only screen and (max-device-width: 560px) {
+    .project-card__tags span {
+        font-size: 0.6rem;
+    }
 }
 
 .project-card__links {
@@ -37,11 +63,27 @@
     margin: 8px;
     transition: 0.7s;
 }
-
-.project-card__links a:hover {
-    opacity: 0.6;
+@media only screen and (max-device-width: 560px) {
+    .project-card__links a {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    .project-card__links a {
+        font-size: 0.8rem;
+        padding: 12px;
+    }
 }
 
 .project-card__links #project-url {
     padding: 16px 21px;
+}
+@media only screen and (max-device-width: 425px) {
+    .project-card__links #project-url {
+        padding: 12px 17px;
+    }
+}
+
+.project-card__links a:hover {
+    opacity: 0.6;
 }

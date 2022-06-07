@@ -5,6 +5,16 @@
     color: var(--primary-color);
     margin: 0;
 }
+@media only screen and (max-device-width: 768px) {
+    section h2 {
+        text-align: center;
+    }
+}
+@media only screen and (max-device-width: 560px) {
+    section h2 {
+        font-size: 2rem;
+    }
+}
 
 #form-tags {
     display: flex;
@@ -21,6 +31,11 @@
 #form-tags p {
     font-size: 0.7rem;
 }
+@media only screen and (max-device-width: 560px) {
+    #form-tags p {
+        font-size: 0.6rem;
+    }
+}
 
 #form-tags input {
     background-color: var(--secondary-color-bg) !important;
@@ -36,7 +51,19 @@
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
-    width: 100%;
+    gap: 50px;
     padding: 30px 120px;
+}
+@media only screen and (max-device-width: 1285px) {
+    .projects {
+        padding: 30px 24px;
+    }
+}
+@media only screen and (max-device-width: 900px) {
+    .projects {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
 }
