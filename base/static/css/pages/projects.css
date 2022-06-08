@@ -1,18 +1,24 @@
 
 #projects-title {
-    padding: 100px 120px 0 120px;
+    padding: 100px 60px 0 60px;
     font-size: 3rem;
     color: var(--primary-color);
     margin: 0;
 }
+@media only screen and (max-device-width: 991px) {
+    #projects-title {
+        padding: 100px 60px 24px 60px;
+    }
+}
 @media only screen and (max-device-width: 768px) {
-    section h2 {
-        text-align: center;
+    #projects-title {
+        padding: 90px 60px 32px 60px;
     }
 }
 @media only screen and (max-device-width: 560px) {
-    section h2 {
+    #projects-title {
         font-size: 2rem;
+        padding: 80px 24px 32px 24px;
     }
 }
 
@@ -27,6 +33,11 @@
     margin-bottom: 12px;
     color: var(--primary-color);
 }
+@media only screen and (max-device-width: 425px) {
+    #form-tags select {
+        margin: 0;
+    }
+}
 
 #form-tags p {
     font-size: 0.7rem;
@@ -36,11 +47,39 @@
         font-size: 0.6rem;
     }
 }
+@media only screen and (max-device-width: 425px) {
+    #form-tags p {
+        visibility: hidden;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-device-width: 560px) {
+    #form-tags label {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-device-width: 560px) {
+    #form-tags option {
+        font-size: 0.8rem;
+    }
+}
 
 #form-tags input {
     background-color: var(--secondary-color-bg) !important;
     border: solid 1px var(--secondary-color-bg) !important;
     transition: 0.7s !important;
+}
+@media only screen and (max-device-width: 560px) {
+    #form-tags input {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-device-width: 425px) {
+    #form-tags input {
+        padding: 6px 8px;
+    }
 }
 
 #form-tags input:hover {
